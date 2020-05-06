@@ -14,8 +14,8 @@ as seguintes funcionalidades:
       aprovado, reprovado);
   - [x] Controle de acesso, tendo o processo de login e todas as
       chamadas de backend autenticadas. Além disso, é desejável ter dois níveis de permissão:
-  - [x] usuário padrão: pode &quot;Enviar para análise&quot;, ou seja, alterar de pendente para em análise;
-  - [x] usuário admin: pode tomar as ações de &quot;Aprovar&quot; e &quot;Reprovar&quot;;
+    - [x] usuário padrão: pode &quot;Enviar para análise&quot;, ou seja, alterar de pendente para em análise;
+    - [x] usuário admin: pode tomar as ações de &quot;Aprovar&quot; e &quot;Reprovar&quot;;
 
 ## Estrutura do projeto entregue neste repositório
 **[Docker compose](https://docs.docker.com/compose/)** contendo:
