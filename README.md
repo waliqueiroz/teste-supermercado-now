@@ -40,7 +40,7 @@ as seguintes funcionalidades:
 
 Obs: O repositório já contém uma build gerada do projeto Vue.js e um `.env`para o Laravel.
 
-Obs 2: Os arquivos `.env` possuem apenas dados genéricos pertinentes a este projeto e foram mantidos apenas para facilitar o teste.
+Obs 2: Os arquivos `.env` possuem dados genéricos pertinentes a este projeto e foram mantidos apenas para facilitar o teste.
 
 ### Executando o projeto
 Clone o projeto:
