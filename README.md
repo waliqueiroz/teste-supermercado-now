@@ -21,12 +21,12 @@ as seguintes funcionalidades:
 **[Docker compose](https://docs.docker.com/compose/)** contendo:
 - servidor [nginx](https://www.nginx.com/) rodando nas portas **8000 (API)** e **8080 (frontend)**.
 - [php-fpm](https://www.php.net/manual/en/install.fpm.php) v. `7.4` na porta **9000**.
-- [postgreSQL](https://www.postgresql.org/) na porta **5432**. Caso necessite alterar a porta ou configurações do banco de dados, altere [aqui](https://github.com/waliqueiroz/teste-supermercado-now/blob/master/.env) e [aqui](https://github.com/waliqueiroz/teste-supermercado-now/blob/master/htdocs/teste-supermercado-now-api/.env).
+- [postgreSQL](https://www.postgresql.org/) na porta **5432**. Caso necessite alterar a porta ou configurações do banco de dados, altere [aqui](https://github.com/waliqueiroz/teste-supermercado-now/blob/master/.env) e [aqui](https://github.com/waliqueiroz/teste-supermercado-now/blob/master/htdocs/supermercado-now-api/.env).
 
 ### Diretórios do projeto
 - **[htdocs](https://github.com/waliqueiroz/teste-supermercado-now/tree/master/htdocs)**: arquivos do projeto.
-  - **[teste-supermercado-now-api](https://github.com/waliqueiroz/teste-supermercado-now/tree/master/htdocs/teste-supermercado-now-api)**: projeto **Laravel (PHP)**.
-  - **[teste-supermercado-now-web](https://github.com/waliqueiroz/teste-supermercado-now/tree/master/htdocs/teste-supermercado-now-web)** projeto **Vue.js**.
+  - **[supermercado-now-api](https://github.com/waliqueiroz/teste-supermercado-now/tree/master/htdocs/supermercado-now-api)**: projeto **Laravel (PHP)**.
+  - **[supermercado-now-web](https://github.com/waliqueiroz/teste-supermercado-now/tree/master/htdocs/supermercado-now-web)** projeto **Vue.js**.
 - **[nginx](https://github.com/waliqueiroz/teste-supermercado-now/tree/master/nginx)**: arquivos de configurações do **nginx**.
 - **[php-fpm](https://github.com/waliqueiroz/teste-supermercado-now/tree/master/php-fpm)**: arquivos de configurações e build da imagem do **PHP-FPM**.
 
@@ -71,7 +71,7 @@ Obs: O comando anterior te levará direto para o WORKDIR do contêiner: /var/www
 
 Dentro do contêiner, vá até o diretório do projeto Laravel:
 ```
-cd teste-supermercado-now-api
+cd supermercado-now-api
 ```
 
 Instale as dependências:
