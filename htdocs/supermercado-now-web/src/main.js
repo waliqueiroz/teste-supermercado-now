@@ -20,7 +20,7 @@ Vue.use(GlobalFunctions);
 Vue.config.productionTip = false
 
 /* Instanciando o vue acl (Permissões) */
-var acl = new AclCreate({
+const acl = new AclCreate({
   initial: 'public',
   notfound: '/',
   router,
