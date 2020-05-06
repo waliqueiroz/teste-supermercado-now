@@ -1,5 +1,6 @@
 # Teste Supermercado Now
-A aplicação consiste em uma ferramenta para gestão de um catálogo de produtos com backend em **[Laravel](https://laravel.com/) ([PHP](https://www.php.net/))** [REST](https://www.w3.org/2001/sw/wiki/REST) e frontend SPA desenvolvido em **[Vue.js](https://vuejs.org/)** com **[Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/)**. A autenticação é feita via OAuth2.
+A aplicação consiste em uma ferramenta para gestão de um catálogo de produtos.
+O backend foi desenvolvido em **[Laravel](https://laravel.com/) ([PHP](https://www.php.net/))** [REST](https://www.w3.org/2001/sw/wiki/REST) e frontend em **[Vue.js](https://vuejs.org/)** com **[Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/)**. A autenticação é feita via OAuth2.
 
 ## O desafio proposto
 
