@@ -15,9 +15,11 @@ export default new Vuex.Store({
       state.user = user;
     },
     logout(state) {
-      state.user = null
-      window.localStorage.removeItem(state.TOKEN_KEY)
-      router.push('/login');
+      if (state.user) {
+        state.user = null
+        window.localStorage.removeItem(state.TOKEN_KEY)
+        router.push('/login');
+      }
     }
   },
   actions: {

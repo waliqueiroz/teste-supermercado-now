@@ -32,7 +32,6 @@ api.interceptors.response.use(response => { // Em caso de sucesso, retorna a res
     const { config, response: { status, data } } = error // Pega informacoes do erro
     const originalRequest = config
     if (status === 401) { // Se o erro for 401 (Autenticacao)
-        console.log(error)
         //Guarda as requiscoes que falharam num array para serem executadas novamente apos a atualizacao do token
         const retryOriginalRequest = new Promise((resolve) => {
             addSubscriber(token => {
@@ -50,7 +49,6 @@ api.interceptors.response.use(response => { // Em caso de sucesso, retorna a res
             onAccessTokenFetched(token) // refaz as requisicoes que falharam
         } else { // Se o refresh token tiver expirado, sai da aplicação
             if (data.grant_type == 'refresh_token') {
-                console.log('Token expirado.')
                 isAlreadyFetchingAccessToken = false
                 store.commit('logout');
                 return Promise.reject(error)
