@@ -18,7 +18,7 @@ class ProductService
             if (!empty($filters["price_min"]) && !empty($filters["price_max"])) {
                 $query->whereBetween('price', [$filters["price_min"], $filters["price_max"]]);
             } else if (!empty($filters["price_min"])) {
-                $query->where("price", '=>', $filters["price_min"]);
+                $query->where("price", '>=', $filters["price_min"]);
             } else if (!empty($filters["price_max"])) {
                 $query->where("price", '<=', $filters["price_max"]);
             }
